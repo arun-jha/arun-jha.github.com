@@ -54,16 +54,72 @@
               <li id="noti_Container"> <div id="noti_Counter"></div>   
                    <div id="notifications">
                     
-                    <div style="height:300px;">
+                    <div style="height:auto;">
                       
-                     <div class="notificationBody">
-                        <div class="notificationLeftH">YOU AND FOLLOWING</div>
-                        <div class="notificationCentH">FOLLOW REQUEST</div>
+                     <div class="notificationBody row">
+                      <div class="col-xs-4">
+                        <div class="notificationLeftH">You and Following</div>
+                      </div>
+                      <div class="col-xs-8">
+                        <div class="mainBorder row">
+                          <div class="col-xs-6">
+                        <div class="notificationCentH"><span>&#xB7;</span> Follow Request</div>
+                      </div>
+                      <div class="col-xs-6">
                         <div class="notificationRightH">Mark all as read</div>
-                      <h3 class="accessible_elem" id="fbNotificationsJewelHeader">Notifications</h3>
+                      </div>
+                      </div>
+                    </div>
                       
                     </div>
-                    
+
+                    <div class="notificationItems">
+                      <div class="col-xs-2">
+                      <div class="notificationIcon"><img src="img/nIcon.png" alt="" /></div>
+                    </div>
+                    <div class="col-xs-10">
+                      <div class="notificationContent">
+                        <p><strong>Kunaal Satija</strong> started following you.<br /><small>Now</small></p>
+                      </div>
+                    </div>
+                      <div class="clear"></div>
+                    </div>
+                      
+                    <div class="notificationItems">
+                      <div class="col-xs-2">
+                      <div class="notificationIcon"><img src="img/nIcon2.png" alt="" /></div>
+                    </div>
+                    <div class="col-xs-10">
+                      <div class="notificationContent">
+                        <p><strong>Variya Harsh</strong> & <strong>Arpit Agrawal</strong> rated this video SQL for Beginners.<br /><small>5 mins ago</small></p>
+                      </div>
+                    </div>
+                      <div class="clear"></div>
+                    </div>
+
+                    <div class="notificationItems">
+                      <div class="col-xs-2">
+                      <div class="notificationIcon"><img src="img/nIcon3.png" alt="" /></div>
+                    </div>
+                    <div class="col-xs-10">
+                      <div class="notificationContent">
+                        <p><strong>Shobhit Jain</strong> rated this document <strong>DU B.COM Marketing Managment 480 Sem6, 2015 PAPER</strong><br /><small>15 mins ago</small></p>
+                      </div>
+                    </div>
+                      <div class="clear"></div>
+                    </div>
+
+                       <div class="notificationItems">
+                        <div class="col-xs-2">
+                      <div class="notificationIcon"><img src="img/nIcon4.png" alt="" /></div>
+                    </div>
+                    <div class="col-xs-10">
+                      <div class="notificationContent">
+                        <p>Welcome to <strong>EduRev</strong>, we will try our best to simplify and revolutionize education for you. Click on this notification to leave a feedback anytime. <strong>Happy e-studying.</strong></p>
+                      </div>
+                    </div>
+                      <div class="clear"></div>
+                    </div>
 
                     </div>
                     <div class="seeAll"><a href="#">See All</a></div>
@@ -108,11 +164,11 @@
               <div class="box_block">
                 <ul class="ed_askQuestion">
                   <li>Share:</li>
-                  <li class="active"><a href="#">Question</a></li>
-                  <li><a href="#">Request Content</a></li>
-                  <li><a href="#">Write Up</a></li>
-                  <li><a href="#">Document</a></li>
-                  <li><a href="#">Video</a></li>
+                  <li class="active"><a href="#"  data-toggle="modal" data-target="#myModal">Question</a></li>
+                  <li><a href="#"  data-toggle="modal" data-target="#myModal">Request Content</a></li>
+                  <li><a href="#"  data-toggle="modal" data-target="#myModal">Write Up</a></li>
+                  <li><a href="#"  data-toggle="modal" data-target="#myModal">Document</a></li>
+                  <li><a href="#"  data-toggle="modal" data-target="#myModal">Video</a></li>
                 </ul>
                 <div id="" class="question_box">
                   <input class="question_box_input" type="" name="" placeholder="Ask a Question?" data-toggle="modal" data-target="#myModal">
@@ -156,7 +212,7 @@
               <div class="box_block">
                 <div class="row">
                   <div class="col-sm-9 col-md-9">
-                    <h2>UPSC Prelims Paper 1 Prep - Notes, Videos, MCQs, Textbooks</h2>
+                    <h2 onclick="window.open('2.1.html', '_self')">UPSC Prelims Paper 1 Prep - Notes, Videos, MCQs, Textbooks</h2>
                     <span class="nextScheduleText">Next in schedule:</span>
                     <ul class="docList">
                       <li><img src="img/readnotpadicon.png" alt=""> <strong>Doc:</strong><span>1. Polity and Constitution - Current Affairs, May 2017</span></li>
@@ -477,6 +533,41 @@ we have to charge GST from our customers.</h2>
     <script src="js/custom.js"></script>
 
 
+<!-- Modal -->
+<div id="myModalChoose" class="modal fade edurevModalChoose" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <h4>Choose upto 5 courses for free!</h4>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <div class="boxes row">
+        <p>SELECT A CATEGORY</p>
+        <div class="col-sm-4">
+         <div class="boxitems">
+           <input type="radio" id="exam1" name="radio-group">
+            <label for="exam1">Entrance Exams</label>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="boxitems">
+           <input type="radio" id="exam2" name="radio-group" checked>
+            <label for="exam2">Class 5 - Class 12</label>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="boxitems">
+            <input type="radio" id="exam3" name="radio-group">
+            <label for="exam3">Other Topics</label>
+         </div>
+       </div>
+       </div>
+      </div>
+  </div>
+</div>
+<script type="text/javascript">
+  
+</script>
   </body>
 </html>

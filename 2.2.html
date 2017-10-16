@@ -41,9 +41,9 @@
               <span></span>
               <span></span>
             </a><!--ed_clickBtn-->
-            <a href="#"><img src="img/logo.jpg" alt="logo" ></a>
+            <a href="index.html"><img src="img/logo.jpg" alt="logo" ></a>
           </div>
-          <div class="col-sm-7 col-md-7">
+          <div class="col-sm-5 col-md-6">
             <div class="courses_dropDown">
             <select>
               <option>Courses</option>
@@ -51,17 +51,94 @@
               <option>Courses</option>
               <option>Courses</option>
             </select>
-            <span class="courses_img"><img src="img/courses-img.png" alt=""></span>
+            <span class="courses_img"><img src="img/courses-img.png" alt="" class="img-responsive"></span>
             <input type="" name="" placeholder="Search for anything...">
             <button class="search_btn"><img src="img/search-icon.png" alt=""></button>
             </div><!--courses_dropDown-->
           </div><!--col-sm-7 col-md-7-->
-          <div class="col-sm-3 col-md-3">
+          <div class="col-sm-5 col-md-4">
             <ul class="ed_top_link">
               <li class="mobileDisplay"><a href="#" class="topLinkBorder"><img class="profileIMG" src="img/profile-img.png" alt=""> Arun Jha</a></li>
               <li class="mobileDisplay"><a href="#" class="topLinkBorder">Home</a></li>
               <li><a href="#"><img src="img/upload-img.png" alt=""></a></li>
-              <li><a href="#"><img src="img/notification-img.png" alt=""></a></li>
+              <li id="noti_Container"> <div id="noti_Counter"></div>   
+                   <div id="notifications">
+                    
+                    <div style="height:auto;">
+                      
+                     <div class="notificationBody row">
+                      <div class="col-xs-4">
+                        <div class="notificationLeftH">You and Following</div>
+                      </div>
+                      <div class="col-xs-8">
+                        <div class="mainBorder row">
+                          <div class="col-xs-6">
+                        <div class="notificationCentH"><span>&#xB7;</span> Follow Request</div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="notificationRightH">Mark all as read</div>
+                      </div>
+                      </div>
+                    </div>
+                      
+                    </div>
+
+                    <div class="notificationItems">
+                      <div class="col-xs-2">
+                      <div class="notificationIcon"><img src="img/nIcon.png" alt="" /></div>
+                    </div>
+                    <div class="col-xs-10">
+                      <div class="notificationContent">
+                        <p><strong>Kunaal Satija</strong> started following you.<br /><small>Now</small></p>
+                      </div>
+                    </div>
+                      <div class="clear"></div>
+                    </div>
+                      
+                    <div class="notificationItems">
+                      <div class="col-xs-2">
+                      <div class="notificationIcon"><img src="img/nIcon2.png" alt="" /></div>
+                    </div>
+                    <div class="col-xs-10">
+                      <div class="notificationContent">
+                        <p><strong>Variya Harsh</strong> & <strong>Arpit Agrawal</strong> rated this video SQL for Beginners.<br /><small>5 mins ago</small></p>
+                      </div>
+                    </div>
+                      <div class="clear"></div>
+                    </div>
+
+                    <div class="notificationItems">
+                      <div class="col-xs-2">
+                      <div class="notificationIcon"><img src="img/nIcon3.png" alt="" /></div>
+                    </div>
+                    <div class="col-xs-10">
+                      <div class="notificationContent">
+                        <p><strong>Shobhit Jain</strong> rated this document <strong>DU B.COM Marketing Managment 480 Sem6, 2015 PAPER</strong><br /><small>15 mins ago</small></p>
+                      </div>
+                    </div>
+                      <div class="clear"></div>
+                    </div>
+
+                       <div class="notificationItems">
+                        <div class="col-xs-2">
+                      <div class="notificationIcon"><img src="img/nIcon4.png" alt="" /></div>
+                    </div>
+                    <div class="col-xs-10">
+                      <div class="notificationContent">
+                        <p>Welcome to <strong>EduRev</strong>, we will try our best to simplify and revolutionize education for you. Click on this notification to leave a feedback anytime. <strong>Happy e-studying.</strong></p>
+                      </div>
+                    </div>
+                      <div class="clear"></div>
+                    </div>
+
+                    </div>
+                    <div class="seeAll"><a href="#">See All</a></div>
+                </div>
+                <a href="#"><img src="img/notification-img.png" alt="" id="noti_Button"></a>
+
+                
+
+              </li>
               <li class="mobileDisplay"><a href="#" style="padding-right: 0px;"><img src="img/setting-img.png" alt=""></a></li>
             </ul>
           </div><!--col-sm-3 col-md-3-->
@@ -91,7 +168,7 @@
               </div><!--contantBox-->
             </div><!--col-sm-7 col-md-7-->
             <div class="col-sm-3 col-md-3 hideBox">
-              <div class="enrolledBtn">
+              <div class="enrolledBtn" onclick="window.open('2.1.html', '_selft')">
                  Enroll Now
               </div>
               <span class="font11">220 enrolled users</span>

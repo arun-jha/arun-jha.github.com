@@ -53,7 +53,10 @@ $(document).ready(function () {
         $('#notifications').click(function () {
             return false;       // DO NOTHING WHEN CONTAINER IS CLICKED.
         });
+
+        setTimeout(function(){ $('#myModalChoose').modal('show'); }, 1000);
     });
+
 
 
 /*--inner page start----*/
