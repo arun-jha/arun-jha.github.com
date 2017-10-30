@@ -1,0 +1,1070 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Edurev</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/innerpage.css" rel="stylesheet">
+    <link href="css/innerpage2.css" rel="stylesheet">
+    <link href="css/innerpage3.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="ed_main">
+        <div class="ed_header">
+            <div class="container">
+                <div class="col-sm-2 col-md-2">
+                    <a class="ed_clickBtn" onclick="openNav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a><!--ed_clickBtn-->
+                    <a href="#"><img src="img/logo.jpg" alt="logo"></a>
+                </div>
+                <div class="col-sm-5 col-md-6">
+                    <div class="courses_dropDown">
+                        <select>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                        </select>
+                        <span class="courses_img"><img src="img/courses-img.png" alt="" class="img-responsive"></span>
+                        <input type="" name="" placeholder="Search for anything...">
+                        <button class="search_btn"><img src="img/search-icon.png" alt=""></button>
+                    </div><!--courses_dropDown-->
+                </div><!--col-sm-7 col-md-7-->
+                <div class="col-sm-5 col-md-4">
+                    <ul class="ed_top_link">
+                        <li class="mobileDisplay"><a href="#" class="topLinkBorder"><img class="profileIMG" src="img/profile-img.png" alt=""> Arun Jha</a></li>
+                        <li class="mobileDisplay"><a href="#" class="topLinkBorder">Home</a></li>
+                        <li><a href="#"><img src="img/upload-img.png" alt=""></a></li>
+                        <li id="noti_Container">
+                            <div id="noti_Counter"></div>
+                            <div id="notifications">
+
+                                <div style="height:auto;">
+
+                                    <div class="notificationBody row">
+                                        <div class="col-xs-4">
+                                            <div class="notificationLeftH">You and Following</div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="mainBorder row">
+                                                <div class="col-xs-6">
+                                                    <div class="notificationCentH"><span>&#xB7;</span> Follow Request</div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="notificationRightH">Mark all as read</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Kunaal Satija</strong> started following you.<br /><small>Now</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon2.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Variya Harsh</strong> & <strong>Arpit Agrawal</strong> rated this video SQL for Beginners.<br /><small>5 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon3.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Shobhit Jain</strong> rated this document <strong>DU B.COM Marketing Managment 480 Sem6, 2015 PAPER</strong><br /><small>15 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon4.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p>Welcome to <strong>EduRev</strong>, we will try our best to simplify and revolutionize education for you. Click on this notification to leave a feedback anytime. <strong>Happy e-studying.</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="seeAll"><a href="#">See All</a></div>
+                            </div>
+                            <a href="#"><img src="img/notification-img.png" alt="" id="noti_Button"></a>
+
+                        </li>
+                        <li class="mobileDisplay"><a href="#" style="padding-right: 0px;"><img src="img/setting-img.png" alt=""></a></li>
+                    </ul>
+                </div><!--col-sm-3 col-md-3-->
+            </div><!--container-->
+
+        </div><!--ed_header end-->
+        <div class="ed_container">
+            <div class="ed_tab_block">
+                <div class="container">
+                    <div class="col-sm-2 col-md-2">
+                        <h4>Search Options</h4>
+                    </div>
+                    <div class="col-sm-7 col-md-7">
+
+                        <ul class="tabs hrTabs">
+                            <li class="tab-link current" data-tab="tab-1">
+                                <a href="#">
+                                    <i class="fa fa-list-ol listIcon" aria-hidden="true"></i>  Content (90+)
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-2">
+                                <a href="#">
+                                    <i class="fa fa-file-text-o listIcon" aria-hidden="true"></i> Tests (100+)
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-3">
+                                <a href="#">
+                                    <i class="fa fa-graduation-cap listIcon" aria-hidden="true"></i> Courses (60+)
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-4">
+                                <a href="#">
+                                    <i class="fa fa-user-plus listIcon" aria-hidden="true"></i> People (40+)
+                                    <span></span>
+                                </a>
+                            </li>
+                        </ul><!--tabs-->
+                    </div>
+                    <div class="col-sm-3 col-md-3"></div>
+                </div><!--container-->
+            </div><!--ed_tab_block-->
+            <div class="container">
+                <div id="tab-1" class="tab-content current">
+                    <div class="col-sm-2 col-md-2">
+                        <div class="ed_left_menu">
+                            <div class="ed_filterBox">
+                                <h4>Filters</h4>
+                                <ul class="filterList">
+                                    <li class="smallCheckbox">
+                                        <a href="#">
+                                            <label class="control control--checkbox">
+                                                Schools
+                                                <input type="checkbox" />
+                                                <div class="control__indicator "></div>
+                                            </label>
+                                        </a>
+                                        <span class="dropDownBtn accordion"></span>
+                                    </li>
+                                    <li class="smallCheckbox">
+                                        <a href="#">
+                                            <label class="control control--checkbox">
+                                                Graduation / College
+                                                <input type="checkbox" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </a>
+                                        <span class="dropDownBtn"></span>
+                                    </li>
+                                    <li class="smallCheckbox">
+                                        <a href="#">
+                                            <label class="control control--checkbox">
+                                                IT & Software
+                                                <input type="checkbox" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </a>
+                                        <span class="dropDownBtn"></span>
+                                    </li>
+                                    <li class="smallCheckbox">
+                                        <a href="#">
+                                            <label class="control control--checkbox">
+                                                Languages
+                                                <input type="checkbox" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </a>
+                                        <span class="dropDownBtn"></span>
+                                    </li>
+                                    <li class="smallCheckbox">
+                                        <a href="#">
+                                            <label class="control control--checkbox">
+                                                Test Perps
+                                                <input type="checkbox" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </a>
+                                        <span class="dropDownBtn"></span>
+                                    </li>
+                                    <li class="smallCheckbox">
+                                        <a href="#">
+                                            <label class="control control--checkbox">
+                                                Books
+                                                <input type="checkbox" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </a>
+                                        <span class="dropDownBtn"></span>
+                                    </li>
+                                </ul><!--filterList-->
+                            </div><!--ed_filterBox-->
+                            <div class="ed_filterBox">
+                                <ul class="filterList">
+                                    <li>
+                                        <a href="#">
+                                            <label class="control control--checkbox">
+                                                <p>
+                                                    <span class="text10">Type:</span>Documents
+                                                </p>
+                                                <input type="checkbox" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </a>
+                                        <span class="dropDownBtn2"></span>
+                                    </li>
+                                </ul><!--filterList-->
+                            </div><!--ed_filterBox-->
+                            <div class="ed_filterBox">
+                                <ul class="filterList">
+                                    <li>
+                                        <a href="#">
+                                            <label class="control control--checkbox">
+                                                <p>
+                                                    <span class="text10">Sort by:</span>Relevance
+                                                </p>
+                                                <input type="checkbox" />
+                                                <div class="control__indicator"></div>
+                                            </label>
+                                        </a>
+                                        <span class="dropDownBtn2"></span>
+                                    </li>
+                                </ul><!--filterList-->
+                            </div><!--ed_filterBox-->
+                        </div><!--ed_left_menu-->
+                    </div><!--col-sm-2 col-md-2-->
+                    <div class="col-sm-7 col-md-7">
+                        <div class="ed_mid_box">
+
+                            <div class="ed_coursesBox">
+                                <h4>Courses</h4>
+                                <div class="lineBox" style="margin-top: 0px;"></div>
+                                <div class="col-md-4 col-sm-4 rgtborder">
+                                    <div class="ed_coursesBoxIn">
+                                        <div class="coursesIMG">
+                                            <img src="img/innerpage/courses-img01.jpg" alt="" class="img-responsive">
+                                        </div><!--coursesIMG-->
+                                        <h5>Sentence Correction (SC) For GMAT</h5>
+                                        <span><img src="img/user-icon.png" alt="" class="marrgt10"> Wizius Careers</span>
+                                    </div><!--ed_coursesBoxIn-->
+                                </div>
+                                <div class="col-md-4 col-sm-4 rgtborder">
+                                    <div class="ed_coursesBoxIn">
+                                        <div class="coursesIMG">
+                                            <img src="img/innerpage/courses-img02.jpg" alt="" class="img-responsive">
+                                        </div><!--coursesIMG-->
+                                        <h5>Verbal For GMAT</h5>
+                                        <span><img src="img/user-icon.png" alt="" class="marrgt10"> Bakliwal Institute</span>
+                                    </div><!--ed_coursesBoxIn-->
+                                </div>
+                                <div class="col-md-4 col-sm-4 rgtborder2">
+                                    <div class="ed_coursesBoxIn">
+                                        <div class="coursesIMG">
+                                            <img src="img/innerpage/courses-img03.jpg" alt="" class="img-responsive">
+                                        </div><!--coursesIMG-->
+                                        <h5>Quant For GMAT (Graduate Manage...</h5>
+                                        <span><img src="img/user-icon.png" alt="" class="marrgt10"> Wizius Careers</span>
+                                    </div><!--ed_coursesBoxIn-->
+                                </div>
+                                <div class="clear"></div>
+                            </div><!--ed_coursesBox-->
+                            <div class="height30"></div>
+                            <h4>Documents & Videos</h4>
+                            <div class="height10"></div>
+                            <div class="box_block paddBot upsc_paper">
+                                <div class="row">
+                                    <div class="col-xs-2 col-sm-2 col-md-2">
+                                        <div class="document_iconBox">
+                                            <img src="img/document-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10">
+                                        <div class="inBox">
+                                            <h2>GMAT-Verbal Section</h2>
+                                            <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Renu</span></p>
+                                            <ul class="likeUnlikeBox paddingBottom">
+                                                <li><i class="fa fa-bar-chart" aria-hidden="true"></i> 116</li>
+                                                <li><i class="fa fa-star-o listIcon" aria-hidden="true"></i> 5</li>
+                                            </ul>
+                                            <span class="text13">
+                                                MBA, GMAT, Graduate management admission test, Management studies,
+                                                Gmat-verbal section
+                                            </span>
+                                        </div><!--inBox-->
+                                    </div>
+                                </div><!--row-->
+                            </div><!--box_block-->
+                            <div class="box_block paddBot upsc_paper">
+                                <div class="row">
+                                    <div class="col-xs-2 col-sm-2 col-md-2">
+                                        <div class="document_iconBox">
+                                            <img src="img/document-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10">
+                                        <div class="inBox">
+                                            <h2>RC Questions GMAT(1995-2000)</h2>
+                                            <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Renu</span></p>
+                                            <ul class="likeUnlikeBox paddingBottom">
+                                                <li><i class="fa fa-bar-chart" aria-hidden="true"></i> 116</li>
+                                                <li><i class="fa fa-star-o listIcon" aria-hidden="true"></i> 5</li>
+                                            </ul>
+                                            <span class="text13">
+                                                MBA, GMAT, Graduate management admission test, Management studies,
+                                                RC questions gmat(1995-2000)
+                                            </span>
+                                        </div><!--inBox-->
+                                    </div>
+                                </div><!--row-->
+                            </div><!--box_block-->
+                            <div class="box_block paddBot upsc_paper">
+                                <div class="row">
+                                    <div class="col-xs-2 col-sm-2 col-md-2">
+                                        <div class="document_iconBox">
+                                            <img src="img/document-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10">
+                                        <div class="inBox">
+                                            <h2>Explain (Critical Reasoning) for GMAT(Very Important)</h2>
+                                            <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                            <ul class="likeUnlikeBox paddingBottom">
+                                                <li><i class="fa fa-bar-chart" aria-hidden="true"></i> 80</li>
+                                                <li><i class="fa fa-star-o listIcon" aria-hidden="true"></i> 5</li>
+                                            </ul>
+                                            <span class="text13">GMAT</span>
+                                        </div><!--inBox-->
+                                    </div>
+                                </div><!--row-->
+                            </div><!--box_block-->
+                            <div class="box_block paddBot upsc_paper">
+                                <div class="row">
+                                    <div class="col-xs-2 col-sm-2 col-md-2">
+                                        <div class="document_iconBox">
+                                            <img src="img/document-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-10 col-md-10">
+                                        <div class="inBox">
+                                            <h2>Inference ( Critical Reasoning) for GMAT(Very Important)</h2>
+                                            <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                            <ul class="likeUnlikeBox paddingBottom">
+                                                <li><i class="fa fa-bar-chart" aria-hidden="true"></i> 56</li>
+                                                <li><i class="fa fa-star-o listIcon" aria-hidden="true"></i> 5</li>
+                                            </ul>
+                                            <span class="text13">GMAT</span>
+                                        </div><!--inBox-->
+                                    </div>
+                                </div><!--row-->
+                            </div><!--box_block-->
+
+                        </div><!--ed_mid_box-->
+                    </div><!--col-sm-7 col-md-7-->
+                    <div class="col-sm-3 col-md-3">
+                        <div class="ed_rgt_box">
+                            <div class="people_box">
+                                <h3>Topics</h3>
+                                <div class="lineBox" style="margin-top: 0px;"></div><!--lineBox-->
+                                <ul class="topics_list">
+                                    <li>Gmat</li>
+                                    <li class="rgtpadding30">System Collection Generic List <span>+</span></li>
+                                </ul>
+                            </div>
+                            <div class="recommended_box ">
+                                <h3>Tests</h3>
+                                <div class="lineBox" style="margin-top: 0px;"></div><!--lineBox-->
+                                <ul class="recommendedList">
+                                    <li>Reading Comprehension - Practice Test (2...</li>
+                                    <li>
+                                        <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                    </li>
+                                </ul>
+                                <ul class="recommendedList">
+                                    <li>Linear Equations - Practice Test(1)</li>
+                                    <li>
+                                        <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                    </li>
+                                </ul>
+                                <ul class="recommendedList">
+                                    <li>Exponents - Practice Test(1)</li>
+                                    <li>
+                                        <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <a href="#" class="show_more">Show all results</a>
+                                </div>
+                            </div><!--recommended_box-->
+                            <div class="people_box">
+                                <h3>People</h3>
+                                <div class="lineBox" style="margin-top: 0px;"></div><!--lineBox-->
+                                <div class="row people_boxIn">
+                                    <div class="col-xs-2 col-sm-3 col-md-3">
+                                        <span class="people_img"><img src="img/people.png" alt=""></span>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-9 col-md-9">
+                                        <p>Bakliwal Institute</p>
+                                        <span>Institute <br /> CAT, MAT, GMAT, Bank prep</span>
+                                        <button class="smallBtn backNone" type="button">Follow</button>
+                                    </div>
+                                </div><!--row people_boxIn-->
+                                <div class="lineBox"></div><!--lineBox-->
+                                <div class="row people_boxIn">
+                                    <div class="col-xs-2 col-sm-3 col-md-3">
+                                        <span class="people_img"><img src="img/people.png" alt=""></span>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-9 col-md-9">
+                                        <p>SRSPS Institute</p>
+                                        <span>Institute <br />SR School of professional studies, New Delhi</span>
+                                        <button class="smallBtn backNone" type="button">Follow</button>
+                                    </div>
+                                </div><!--row people_boxIn-->
+                                <div class="lineBox"></div><!--lineBox-->
+                                <div class="row people_boxIn">
+                                    <div class="col-xs-2 col-sm-3 col-md-3">
+                                        <span class="people_img"><img src="img/people.png" alt=""></span>
+                                    </div>
+                                    <div class="col-xs-10 col-sm-9 col-md-9">
+                                        <p>WIZIUS CAREERS</p>
+                                        <span>Teacher</span>
+                                        <button class="smallBtn backNone" type="button">Follow</button>
+                                    </div>
+                                </div><!--row people_boxIn-->
+                                <div class="lineBox"></div><!--lineBox-->
+                                <div class="btn_box">
+                                    <a href="#" class="show_more">Show all results</a>
+                                </div>
+                            </div><!--people_box-->
+
+                        </div><!--ed_rgt_box-->
+                    </div><!--col-sm-3 col-md-3-->
+                </div><!--tab-1-->
+                <div id="tab-2" class="tab-content">
+                    <div class="container">
+                        <div class="col-sm-2 col-md-2">
+                            <div class="ed_left_menu">
+                                <div class="ed_filterBox">
+                                    <ul class="filterList">
+                                        <li>
+                                            <a href="#">
+                                                <label class="control control--checkbox">
+                                                    <p>
+                                                        <span class="text10">Author:</span>All
+                                                    </p>
+                                                    <input type="checkbox" />
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                            </a>
+                                            <span class="dropDownBtn2"></span>
+                                        </li>
+                                    </ul><!--filterList-->
+                                </div><!--ed_filterBox-->
+                                <div class="ed_filterBox">
+                                    <ul class="filterList">
+                                        <li>
+                                            <a href="#">
+                                                <label class="control control--checkbox">
+                                                    <p>
+                                                        <span class="text10">Sort by:</span>Relevance
+                                                    </p>
+                                                    <input type="checkbox" />
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                            </a>
+                                            <span class="dropDownBtn2"></span>
+                                        </li>
+                                    </ul><!--filterList-->
+                                </div><!--ed_filterBox-->
+                            </div><!--ed_left_menu-->
+                        </div><!--col-sm-2 col-md-2-->
+                        <div class="col-sm-7 col-md-7">
+                            <div class="ed_mid_box">
+                                <div class="box_block paddBot upsc_paper">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2 col-md-2">
+                                            <div class="document_iconBox">
+                                                <img src="img/innerpage/test-icon.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-10 col-md-10">
+                                            <div class="inBox">
+                                                <h2>Control System (EE & EC GATE 2017)</h2>
+                                                <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                                <ul class="likeUnlikeBox paddingBottom">
+                                                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> 40 ques</li>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 30 mins</li>
+                                                </ul>
+                                            </div><!--inBox-->
+                                        </div><!--col-xs-9 col-sm-10 col-md-10-->
+                                    </div><!--row-->
+                                </div><!--box_block-->
+                                <div class="box_block paddBot upsc_paper">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2 col-md-2">
+                                            <div class="document_iconBox">
+                                                <img src="img/innerpage/test-icon.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-10 col-md-10">
+                                            <div class="inBox">
+                                                <h2>Factors And Multiples</h2>
+                                                <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                                <ul class="likeUnlikeBox paddingBottom">
+                                                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> 15 ques</li>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 30 mins</li>
+                                                </ul>
+                                            </div><!--inBox-->
+                                        </div><!--col-xs-9 col-sm-10 col-md-10-->
+                                    </div><!--row-->
+                                </div><!--box_block-->
+                                <div class="box_block paddBot upsc_paper">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2 col-md-2">
+                                            <div class="document_iconBox">
+                                                <img src="img/innerpage/test-icon.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-10 col-md-10">
+                                            <div class="inBox">
+                                                <h2>Digits And Rounding Off</h2>
+                                                <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                                <ul class="likeUnlikeBox paddingBottom">
+                                                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> 10 ques</li>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 15 mins</li>
+                                                </ul>
+                                            </div><!--inBox-->
+                                        </div><!--col-xs-9 col-sm-10 col-md-10-->
+                                    </div><!--row-->
+                                </div><!--box_block-->
+                                <div class="box_block paddBot upsc_paper">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2 col-md-2">
+                                            <div class="document_iconBox">
+                                                <img src="img/innerpage/test-icon.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-10 col-md-10">
+                                            <div class="inBox">
+                                                <h2>The Supreme Powers</h2>
+                                                <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> WIZIUS CAREERS</span></p>
+                                                <ul class="likeUnlikeBox paddingBottom">
+                                                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> 10 ques</li>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 15 mins</li>
+                                                </ul>
+                                            </div><!--inBox-->
+                                        </div><!--col-xs-9 col-sm-10 col-md-10-->
+                                    </div><!--row-->
+                                </div><!--box_block-->
+                                <div class="box_block paddBot upsc_paper">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2 col-md-2">
+                                            <div class="document_iconBox">
+                                                <img src="img/innerpage/test-icon.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-10 col-md-10">
+                                            <div class="inBox">
+                                                <h2>Miscellaneous Number System</h2>
+                                                <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> WIZIUS CAREERS</span></p>
+                                                <ul class="likeUnlikeBox paddingBottom">
+                                                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> 20 ques</li>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 30 mins</li>
+                                                </ul>
+                                            </div><!--inBox-->
+                                        </div><!--col-xs-9 col-sm-10 col-md-10-->
+                                    </div><!--row-->
+                                </div><!--box_block-->
+                                <div class="box_block paddBot upsc_paper">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2 col-md-2">
+                                            <div class="document_iconBox">
+                                                <img src="img/innerpage/test-icon.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-10 col-md-10">
+                                            <div class="inBox">
+                                                <h2>Remainders 1</h2>
+                                                <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p>
+                                                <ul class="likeUnlikeBox paddingBottom">
+                                                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> 15 ques</li>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 30 mins</li>
+                                                </ul>
+                                            </div><!--inBox-->
+                                        </div><!--col-xs-9 col-sm-10 col-md-10-->
+                                    </div><!--row-->
+                                </div><!--box_block-->
+                                <div class="box_block paddBot upsc_paper">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2 col-md-2">
+                                            <div class="document_iconBox">
+                                                <img src="img/innerpage/test-icon.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-10 col-md-10">
+                                            <div class="inBox">
+                                                <h2>Pronouns - Test (Identify The Pronouns - MCQ)</h2>
+                                                <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> WIZIUS CAREERS</span></p>
+                                                <ul class="likeUnlikeBox paddingBottom">
+                                                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> 10 ques</li>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 10 mins</li>
+                                                </ul>
+                                            </div><!--inBox-->
+                                        </div><!--col-xs-9 col-sm-10 col-md-10-->
+                                    </div><!--row-->
+                                </div><!--box_block-->
+                                <div class="box_block paddBot upsc_paper">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2 col-md-2">
+                                            <div class="document_iconBox">
+                                                <img src="img/innerpage/test-icon.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-10 col-md-10">
+                                            <div class="inBox">
+                                                <h2>Antonyms - MCQ Test (2)</h2>
+                                                <p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> WIZIUS CAREERS</span></p>
+                                                <ul class="likeUnlikeBox paddingBottom">
+                                                    <li><i class="fa fa-question-circle-o" aria-hidden="true"></i> 25 ques</li>
+                                                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> 25 mins</li>
+                                                </ul>
+                                            </div><!--inBox-->
+                                        </div><!--col-xs-9 col-sm-10 col-md-10-->
+                                    </div><!--row-->
+                                </div><!--box_block-->
+
+                            </div><!--ed_mid_box-->
+                        </div><!--col-sm-7 col-md-7-->
+                        <div class="col-sm-3 col-md-3">
+                            <div class="ed_rgt_box">
+                                <div class="people_box">
+                                    <h3>Topics</h3>
+                                    <div class="lineBox" style="margin-top: 0px;"></div><!--lineBox-->
+                                    <ul class="topics_list">
+                                        <li>Gmat</li>
+                                        <li class="rgtpadding30">System Collection Generic List <span>+</span></li>
+                                    </ul>
+                                </div>
+                                <div class="recommended_box coursesBlock">
+                                    <h3>Courses</h3>
+                                    <div class="lineBox" style="margin-top: 0px;"></div><!--lineBox-->
+                                    <ul class="recommendedList">
+                                        <li>Sentence Correction (SC) For GMAT</li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>4k</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> 4</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="recommendedList">
+                                        <li>Verbal For GMAT</li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>386</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> 3.5</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="recommendedList">
+                                        <li>Quant for GMAT</li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>1189</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> <span> 4</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="recommendedList">
+                                        <li>Quant for GMAT (Graduate Management Admissions Test)</li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> WIZIUS CAREERS</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>395</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> <span> 4.5</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="recommendedList">
+                                        <li>Verbal Aptitude Basics </li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>4k</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> <span> 4.8</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                </div><!--coursesBlock-->
+
+                                <div class="people_box">
+                                    <h3>People</h3>
+                                    <div class="lineBox" style="margin-top: 0px;"></div><!--lineBox-->
+                                    <div class="row people_boxIn">
+                                        <div class="col-xs-2 col-sm-3 col-md-3">
+                                            <span class="people_img"><img src="img/people.png" alt=""></span>
+                                        </div>
+                                        <div class="col-xs-10 col-sm-9 col-md-9">
+                                            <p>Bakliwal Institute</p>
+                                            <span>Institute <br /> CAT, MAT, GMAT, Bank prep</span>
+                                            <button class="smallBtn backNone" type="button">Follow</button>
+                                        </div>
+                                    </div><!--row people_boxIn-->
+                                    <div class="lineBox"></div><!--lineBox-->
+                                    <div class="row people_boxIn">
+                                        <div class="col-xs-2 col-sm-3 col-md-3">
+                                            <span class="people_img"><img src="img/people.png" alt=""></span>
+                                        </div>
+                                        <div class="col-xs-10 col-sm-9 col-md-9">
+                                            <p>SRSPS Institute</p>
+                                            <span>Institute <br />SR School of professional studies, New Delhi</span>
+                                            <button class="smallBtn backNone" type="button">Follow</button>
+                                        </div>
+                                    </div><!--row people_boxIn-->
+                                    <div class="lineBox"></div><!--lineBox-->
+                                    <div class="row people_boxIn">
+                                        <div class="col-xs-2 col-sm-3 col-md-3">
+                                            <span class="people_img"><img src="img/people.png" alt=""></span>
+                                        </div>
+                                        <div class="col-xs-10 col-sm-9 col-md-9">
+                                            <p>WIZIUS CAREERS</p>
+                                            <span>Teacher</span>
+                                            <button class="smallBtn backNone" type="button">Follow</button>
+                                        </div>
+                                    </div><!--row people_boxIn-->
+                                    <div class="lineBox"></div><!--lineBox-->
+                                    <div class="btn_box">
+                                        <a href="#" class="show_more">Show all results</a>
+                                    </div>
+                                </div><!--people_box-->
+
+                            </div><!--ed_rgt_box-->
+                        </div><!--col-sm-3 col-md-3-->
+                    </div><!--container-->
+                </div><!--tab-2-->
+
+                <div id="tab-3" class="tab-content">
+                    3
+                </div><!--tab-3-->
+                <div id="tab-4" class="tab-content">
+                    <div class="container">
+                        <div class="col-sm-2 col-md-2">
+                            <div class="ed_left_menu">
+                                <div class="ed_filterBox">
+                                    <ul class="filterList">
+                                        <li>
+                                            <a href="#">
+                                                <label class="control control--checkbox">
+                                                    <p>
+                                                        <span class="text10">City:</span>Delhi
+                                                    </p>
+                                                    <input type="checkbox" />
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                            </a>
+                                            <span class="dropDownBtn2"></span>
+                                        </li>
+                                    </ul><!--filterList-->
+                                </div><!--ed_filterBox-->
+                                <div class="ed_filterBox">
+                                    <ul class="filterList">
+                                        <li class="smallCheckbox">
+                                            <a href="#">
+                                                <label class="control control--checkbox">
+                                                    <p>
+                                                        <span class="text10">Institute
+                                                    </p>
+                                                    <input type="checkbox" />
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                            </a>
+                                            <span class="dropDownBtn"></span>
+                                        </li>
+                                    </ul><!--filterList-->
+                                </div><!--ed_filterBox-->
+                                <div class="ed_filterBox">
+                                    <ul class="filterList">
+                                        <li class="smallCheckbox">
+                                            <a href="#">
+                                                <label class="control control--checkbox">
+                                                    <p>
+                                                        <span class="text10">Designation
+                                                    </p>
+                                                    <input type="checkbox" />
+                                                    <div class="control__indicator"></div>
+                                                </label>
+                                            </a>
+                                            <span class="dropDownBtn"></span>
+                                        </li>
+                                    </ul><!--filterList-->
+                                </div><!--ed_filterBox-->
+                            </div><!--ed_left_menu-->
+                        </div><!--col-sm-2 col-md-2-->
+                        <div class="col-sm-7 col-md-7">
+                            <div class="ed_mid_box">
+                                <div class="more_people">
+                                    <div class="col-xs-4 col-sm-3 col-md-3">
+                                        <div class="peopleImg">
+                                            <img src="img/innerpage/people-img.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-5 col-md-5">
+                                        <span class="peopleHdn">Kunaal Satija</span>
+                                        <span class="text12">from Chandigarh</span>
+                                        <span class="text13">Founder <br />EduRev</span>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4">
+                                        <div class="ed_followBox">
+                                            <div class="col-xs-6 col-sm-6 borderrgt">
+                                                <a href="#" class="padding10">Following</a>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6">
+                                                <a href="#" class="fontsize">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    <i class="fa fa-angle-down paddingleft" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div><!--ed_followBox-->
+                                    </div>
+                                    <div class="clear"></div>
+                                </div><!--more_people-->
+                                <div class="more_people">
+                                    <div class="col-xs-4 col-sm-3 col-md-3">
+                                        <div class="peopleImg">
+                                            <img src="img/innerpage/people-img02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-5 col-md-5">
+                                        <span class="peopleHdn">Kunaal Bhardwaj</span>
+                                        <span class="text12">from Delhi</span>
+                                    </div>
+                                    <div class="col-xs-7 col-sm-4 col-md-4">
+                                        <div class="ed_followBox">
+                                            <div class="col-xs-6 col-sm-6 borderrgt">
+                                                <a href="#" class="padding10">+ Follow</a>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6">
+                                                <a href="#" class="fontsize">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    <i class="fa fa-angle-down paddingleft" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div><!--ed_followBox-->
+                                    </div>
+                                    <div class="clear"></div>
+                                </div><!--more_people-->
+                                <div class="more_people">
+                                    <div class="col-xs-4 col-sm-3 col-md-3">
+                                        <div class="peopleImg">
+                                            <img src="img/innerpage/people-img03.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-5 col-md-5">
+                                        <span class="peopleHdn">Kunaal More</span>
+                                        <span class="text12">Nature and Wildlife Photographer</span>
+                                    </div>
+                                    <div class="col-xs-7 col-sm-4 col-md-4">
+                                        <div class="ed_followBox">
+                                            <div class="col-xs-6 col-sm-6 borderrgt">
+                                                <a href="#" class="padding10">+ Follow</a>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6">
+                                                <a href="#" class="fontsize">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    <i class="fa fa-angle-down paddingleft" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div><!--ed_followBox-->
+                                    </div>
+                                    <div class="clear"></div>
+                                </div><!--more_people-->
+                                <div class="more_people">
+                                    <div class="col-xs-4 col-sm-3 col-md-3">
+                                        <div class="peopleImg">
+                                            <img src="img/innerpage/people-img04.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-5 col-md-5">
+                                        <span class="peopleHdn">Surabhi Kunal Mehta</span>
+                                        <span class="text12">Student</span>
+                                        <span class="text13">Hindu College</span>
+                                    </div>
+                                    <div class="col-xs-7 col-sm-4 col-md-4">
+                                        <div class="ed_followBox">
+                                            <div class="col-xs-6 col-sm-6 borderrgt">
+                                                <a href="#" class="padding10">+ Follow</a>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6">
+                                                <a href="#" class="fontsize">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    <i class="fa fa-angle-down paddingleft" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div><!--ed_followBox-->
+                                    </div>
+                                    <div class="clear"></div>
+                                </div><!--more_people-->
+                                <div class="more_people">
+                                    <div class="col-xs-4 col-sm-3 col-md-3">
+                                        <div class="peopleImg">
+                                            <img src="img/innerpage/people-img05.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-5 col-md-5">
+                                        <span class="peopleHdn">Sanvi Kunal Chattopadhyay</span>
+                                        <span class="text12">Explorer</span>
+                                    </div>
+                                    <div class="col-xs-7 col-sm-4 col-md-4">
+                                        <div class="ed_followBox">
+                                            <div class="col-xs-6 col-sm-6 borderrgt">
+                                                <a href="#" class="padding10">+ Follow</a>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6">
+                                                <a href="#" class="fontsize">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    <i class="fa fa-angle-down paddingleft" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div><!--ed_followBox-->
+                                    </div>
+                                    <div class="clear"></div>
+                                </div><!--more_people-->
+
+                            </div><!--ed_mid_box-->
+                        </div><!--col-sm-7 col-md-7-->
+                        <div class="col-sm-3 col-md-3">
+                            <div class="ed_rgt_box">
+
+                                <div class="recommended_box coursesBlock">
+                                    <h3>Courses</h3>
+                                    <div class="lineBox" style="margin-top: 0px;"></div><!--lineBox-->
+                                    <ul class="recommendedList">
+                                        <li>Sentence Correction (SC) For GMAT</li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>4k</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> 4</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="recommendedList">
+                                        <li>Verbal For GMAT</li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>386</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> 3.5</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="recommendedList">
+                                        <li>Quant for GMAT</li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>1189</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> <span> 4</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="recommendedList">
+                                        <li>Quant for GMAT (Graduate Management Admissions Test)</li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> WIZIUS CAREERS</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>395</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> <span> 4.5</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="recommendedList">
+                                        <li>Verbal Aptitude Basics </li>
+                                        <li><p><img src="img/user-icon.png" alt="" class="marrgt5"> <span> Bakliwal Institute</span></p></li>
+                                        <li>
+                                            <p><i class="fa fa-users" aria-hidden="true"></i> <span>4k</span></p>
+                                            <p><i class="fa fa-star-o" aria-hidden="true"></i> <span> 4.8</span></p>
+                                            <p>free</span></p>
+                                        </li>
+                                    </ul>
+                                </div><!--coursesBlock-->
+
+
+                            </div><!--ed_rgt_box-->
+                        </div><!--col-sm-3 col-md-3-->
+                    </div><!--container-->
+                </div> <!--tab-4-->
+            </div><!--container-->
+            <div class="ed_footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <ul class="ed_footer_link">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <span class="ed_copyright">&#9400; 2012-15 EduRev</span>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <ul class="ed_social_icon">
+                                <li><a href="#"><img src="img/fb.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/tw.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/pt.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/gp.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/tr.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/bl.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div><!--row-->
+                </div><!--container-->
+            </div><!--ed_footer-->
+        </div><!--ed_container end-->
+    </div><!--ed_main end-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

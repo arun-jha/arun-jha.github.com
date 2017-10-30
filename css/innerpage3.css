@@ -1,0 +1,478 @@
+
+.ed_tab_block {
+    display: block;
+    border-bottom: 1px solid #e2e2e2;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+    .ed_tab_block h4 {
+        color: #b8b8b8;
+        padding-bottom: 0;
+        padding-top: 5px;
+    }
+
+ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+    ul.tabs li {
+        background: none;
+        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+        padding: 0 15px;
+        cursor: pointer;
+        position: relative;
+    }
+
+        ul.tabs li .listIcon {
+            padding-right: 10px;
+            font-size: 18px;
+        }
+
+        ul.tabs li.current a {
+            color: #ee4630;
+            border-bottom: 1px solid #ee4630;
+            padding-bottom: 19px;
+        }
+
+        ul.tabs li a {
+            color: #173f67;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            padding-bottom: 19px;
+        }
+
+.tab-content {
+    display: none;
+}
+
+ul.tabs li.current a span {
+    position: absolute;
+    background: url(../img/innerpage/tabarrow.png) no-repeat center;
+    width: 5px;
+    height: 5px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    top: 38px;
+}
+
+.tab-content.current {
+    display: inherit;
+}
+
+.ed_filterBox {
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 20px;
+}
+
+    .ed_filterBox h4 {
+        padding: 15px 15px 15px 15px;
+        border-bottom: 1px solid #e9e9e9;
+        color: #b8b8b8;
+    }
+
+    .ed_filterBox .filterList {
+        list-style: none;
+    }
+
+        .ed_filterBox .filterList li {
+            display: block;
+            font-family: 'Open Sans', sans-serif;
+            position: relative;
+        }
+
+            .ed_filterBox .filterList li a {
+                display: block;
+                font-size: 11px;
+                color: #333333;
+                border-bottom: 1px solid #e2e2e2;
+                padding: 10px 10px 10px 10px;
+                text-decoration: none;
+            }
+
+                .ed_filterBox .filterList li a:hover {
+                    color: #173f67;
+                }
+
+            .ed_filterBox .filterList li.smallCheckbox .control {
+                margin-bottom: 0px;
+                padding-left: 20px;
+                font-weight: 400;
+            }
+
+            .ed_filterBox .filterList li.smallCheckbox .control--checkbox .control__indicator:after {
+                left: 4px;
+                top: 1px;
+                width: 3px;
+                height: 6px;
+                border: solid #fff;
+                border-width: 0 2px 2px 0;
+            }
+
+            .ed_filterBox .filterList li.smallCheckbox .control__indicator {
+                width: 12px;
+                height: 12px;
+                top: 2px;
+                border: 1px solid #9c9c9c;
+            }
+
+            .ed_filterBox .filterList li .control__indicator {
+                top: 3px;
+            }
+
+            .ed_filterBox .filterList li .control {
+                margin-bottom: 0px;
+                padding-left: 30px;
+                font-weight: 300;
+            }
+
+            .ed_filterBox .filterList li p {
+                font-size: 13px;
+                color: #333;
+                line-height: 13px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+                .ed_filterBox .filterList li p .text10 {
+                    display: block;
+                    font-size: 10px;
+                    color: #333;
+                }
+
+            .ed_filterBox .filterList li .dropDownBtn {
+                display: block;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                right: 10px;
+                top: 16px;
+                background: url(../img/innerpage/arrowdown.jpg) no-repeat;
+            }
+
+            .ed_filterBox .filterList li .dropDownBtn2 {
+                display: block;
+                width: 7px;
+                height: 4px;
+                position: absolute;
+                right: 10px;
+                top: 20px;
+                background: url(../img/innerpage/arrowdown.jpg) no-repeat;
+            }
+
+.ed_coursesBox {
+    display: block;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    padding: 15px 0;
+}
+
+    .ed_coursesBox h4 {
+        padding-left: 15px;
+    }
+
+    .ed_coursesBox .ed_coursesBoxIn {
+        text-align: left;
+        display: block;
+        margin: 10px 10px 10px 10px;
+        vertical-align: top;
+    }
+
+        .ed_coursesBox .ed_coursesBoxIn .coursesIMG {
+            display: block;
+            margin-bottom: 15px;
+        }
+/*.ed_coursesBox .ed_coursesBoxIn .coursesIMG img { width: 100%; } */
+.clear {
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+.rgtborder {
+    border-right: 1px solid #e1e1e1;
+    margin-top: 20px;
+}
+
+.rgtborder2 {
+    border-right: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.ed_coursesBox .ed_coursesBoxIn h5 {
+    font-size: 14px;
+    color: #173f67;
+    line-height: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.ed_coursesBox .ed_coursesBoxIn span {
+    color: #878787;
+}
+
+.height30 {
+    height: 30px;
+    display: block;
+}
+
+.height10 {
+    height: 10px;
+    display: block;
+}
+
+.upsc_paper h2 {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+
+.marrgt5 {
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+
+.paddingBottom {
+    margin: 0px !important;
+    padding-bottom: 10px;
+}
+
+.text13 {
+    font-size: 13px;
+    display: block;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.topics_list {
+    display: block;
+    list-style: none;
+    padding: 20px 10px 20px 20px;
+}
+
+    .topics_list li {
+        display: inline-block;
+        font-size: 11px;
+        color: #878787;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        border: 1px solid #d1d1d1;
+        padding: 6px 10px 6px 10px;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+        .topics_list li span {
+            position: absolute;
+            right: 8px;
+            top: 1px;
+            color: #f6a297;
+            font-size: 16px;
+        }
+
+        .topics_list li.rgtpadding30 {
+            padding-right: 20px;
+        }
+
+.box_block {
+    margin-bottom: 20px;
+}
+
+
+.more_people {
+    display: block;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+    .more_people .peopleHdn {
+        display: block;
+        font-size: 18px;
+        color: #021d3a;
+        line-height: 28px;
+        font-weight: 600;
+    }
+
+    .more_people .text12 {
+        display: block;
+        font-size: 12px;
+        color: #333;
+        line-height: 20px;
+    }
+
+    .more_people .text13 {
+        display: block;
+        font-size: 13px;
+        color: #333;
+        line-height: 20px;
+        padding: 0px;
+    }
+
+.ed_followBox {
+    border: 1px solid #173f67;
+    border-radius: 3px;
+    text-align: center;
+}
+
+    .ed_followBox a {
+        display: inline-block;
+        color: #173f67;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 5px 0;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .ed_followBox .borderrgt {
+        border-right: 1px solid #173f67;
+    }
+
+    .ed_followBox a.fontsize {
+        font-size: 14px;
+    }
+
+    .ed_followBox .padding10 {
+        padding: 8px 0px;
+    }
+
+    .ed_followBox .paddingleft {
+        padding-left: 10px;
+    }
+
+    .ed_followBox .fa-ellipsis-h {
+        color: #878787;
+    }
+
+.profile_box {
+    display: block;
+}
+
+    .profile_box .profile_img_box {
+        display: block;
+        width: 143px;
+        height: 143px;
+        border-radius: 100%;
+    }
+
+        .profile_box .profile_img_box img {
+            width: 143px;
+            height: 143px;
+            border-radius: 100%;
+            border: 1px solid #fff;
+        }
+
+    .profile_box .font14 {
+        font-size: 14px;
+        display: block;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 20px;
+    }
+
+    .profile_box h2 {
+        padding-bottom: 0px !important;
+    }
+
+    .profile_box .followList {
+        list-style: none;
+        text-align: right;
+    }
+
+        .profile_box .followList li {
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 300;
+            margin-left: 20px;
+        }
+
+            .profile_box .followList li span {
+                font-size: 20px;
+                font-weight: 100;
+                display: inline-block;
+                padding-left: 15px;
+            }
+
+.ed_innerBox .enrolledBtn.editbtn {
+    width: 140px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.editBtnBox {
+    text-align: right;
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .ed_filterBox {
+        display: none;
+    }
+
+    .ed_tab_block h4 {
+        display: none;
+    }
+    /*
+	ul.tabs li { display: block; }
+	ul.tabs li a  { border-bottom:1px solid #e1e1e1;margin-bottom: 10px;padding-bottom: 10px; }
+	ul.tabs li.current a span { display: none; }
+	ul.tabs li.current a { padding-bottom: 10px;margin-bottom: 10px; }
+	*/
+    .ed_clickBtn {
+        display: none;
+    }
+
+    .profile_box {
+        background: #2f465c;
+        padding: 30px 0px;
+        margin-bottom: 30px;
+    }
+
+        .profile_box .contantBox h2 {
+            color: #fff;
+        }
+
+        .profile_box .contantBox .font12 {
+            color: #fff;
+        }
+
+    .editBtnBox {
+        margin-top: 40px;
+    }
+
+    .ed_followBox {
+        margin-top: 10px;
+    }
+}
+
+ul.tabs.hrTabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+    ul.tabs.hrTabs li {
+        display: inline-block;
+    }
+
+@media (max-width: 374px) {
+	.profile_box .followList li{font-size: 12px;margin-left: 15px;}
+	.profile_box .followList li span{font-size: 14px;padding-left: 3px;}
+	.profile_box .profile_img_box img {
+    width: 110px;
+    height: 110px;
+}
+}

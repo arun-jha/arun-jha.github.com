@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Edurev</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/innerpage.css" rel="stylesheet">
+    <link href="css/innerpage2.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        @media (max-width: 767px) {
+            body {
+                background: #dbe1e7;
+            }
+
+            .ed_main .ed_header {
+                padding: 8px 0px;
+                box-shadow: 0px 2px 3px #ccc;
+            }
+
+            .ed_container {
+                background: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ed_main">
+        <div class="ed_header">
+            <div class="container">
+                <div class="col-sm-2 col-md-2">
+                    <a class="ed_clickBtn" onclick="openNav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a><!--ed_clickBtn-->
+                    <a href="#"><img src="img/logo.jpg" alt="logo"></a>
+                </div>
+                <div class="col-sm-5 col-md-6">
+                    <div class="courses_dropDown">
+                        <select>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                        </select>
+                        <span class="courses_img"><img src="img/courses-img.png" alt="" class="img-responsive"></span>
+                        <input type="" name="" placeholder="Search for anything...">
+                        <button class="search_btn"><img src="img/search-icon.png" alt=""></button>
+                    </div><!--courses_dropDown-->
+                </div><!--col-sm-7 col-md-7-->
+                <div class="col-sm-5 col-md-4">
+                    <ul class="ed_top_link">
+                        <li class="mobileDisplay"><a href="#" class="topLinkBorder"><img class="profileIMG" src="img/profile-img.png" alt=""> Arun Jha</a></li>
+                        <li class="mobileDisplay"><a href="#" class="topLinkBorder">Home</a></li>
+                        <li><a href="#"><img src="img/upload-img.png" alt=""></a></li>
+                        <li id="noti_Container">
+                            <div id="noti_Counter"></div>
+                            <div id="notifications">
+
+                                <div style="height:auto;">
+
+                                    <div class="notificationBody row">
+                                        <div class="col-xs-4">
+                                            <div class="notificationLeftH">You and Following</div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="mainBorder row">
+                                                <div class="col-xs-6">
+                                                    <div class="notificationCentH"><span>&#xB7;</span> Follow Request</div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="notificationRightH">Mark all as read</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Kunaal Satija</strong> started following you.<br /><small>Now</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon2.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Variya Harsh</strong> & <strong>Arpit Agrawal</strong> rated this video SQL for Beginners.<br /><small>5 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon3.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Shobhit Jain</strong> rated this document <strong>DU B.COM Marketing Managment 480 Sem6, 2015 PAPER</strong><br /><small>15 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon4.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p>Welcome to <strong>EduRev</strong>, we will try our best to simplify and revolutionize education for you. Click on this notification to leave a feedback anytime. <strong>Happy e-studying.</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="seeAll"><a href="#">See All</a></div>
+                            </div>
+                            <a href="#"><img src="img/notification-img.png" alt="" id="noti_Button"></a>
+
+                        </li>
+                        <li class="mobileDisplay"><a href="#" style="padding-right: 0px;"><img src="img/setting-img.png" alt=""></a></li>
+                    </ul>
+                </div><!--col-sm-3 col-md-3-->
+            </div><!--container-->
+
+        </div><!--ed_header end-->
+        <div class="ed_container">
+            <div class="ed_bredcurm">
+                <div class="container">
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="backTo"><a href="#"> Back to (8. Culture - <br />Current Affairs...)</a></div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-7">
+                        <div class="bredcurmText">Home > UPSC Prelims Paper 1 Prep - Notes, Videos... > 6. Science and Technology...</div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="nextTo"><a href="#">Next to (8. Culture -<br /> Current Affairs...)</a></div>
+                    </div>
+                </div>
+            </div><!--ed_bredcurm-->
+            <div class="container">
+                <div class="col-sm-2 col-md-2">
+                    <div class="ed_left_menu sidenav innerpageNav" id="mySidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="left_profile">
+                            <span><img class="profileIMG" src="img/profile-img.png" alt=""></span>
+                            <span class="profile_name">Mac Sharma</span>
+                        </div>
+                        <ul class="ed_left_link">
+                            <li><a href="#"><span><img src="img/lfticon01.png" alt=""></span> Feed</a></li>
+                            <li><a href="#"><span><img src="img/lfticon02.png" alt=""></span> My Courses</a></li>
+                            <li><a href="#"><span><img src="img/lfticon03.png" alt=""></span> Discuss</a></li>
+                        </ul>
+                        <ul class="ed_left_link">
+                            <li><a href="#"><span><img src="img/lfticon04.png" alt=""></span> Level 20</a></li>
+                            <li><a href="#"><span><img src="img/lfticon05.png" alt=""></span> Leader Board</a></li>
+                        </ul>
+                        <ul class="ed_left_link">
+                            <li><a href="#"><span><img src="img/lfticon06.png" alt=""></span> Create a Courses</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-7">
+                    <div class="ed_mid_box">
+                        <div class="innerHdnBox">
+                            <div class="row">
+                                <div class="col-sm-9 col-md-10">
+                                    <div class="innerHdn">6. Science and Technology (Part-2) - Current Affairs, June 2017</div>
+                                    <span class="createdBy">Created by: UPSC Rank Holders</span>
+                                </div><!--col-sm-10 col-md-10-->
+                                <div class="col-sm-3 col-md-2">
+                                    <a href="#" class="fullScreen">Full Screen</a>
+                                </div><!--col-sm-2 col-md-2-->
+                            </div><!--row-->
+                        </div><!--innerHdnBox-->
+                        <div class="ed_postBox">
+                            <h1>Science and Technology</h1>
+                            <p class="sub">6.9. ISRO SET TO LAUNCH BACK-UP SATELLITE</p>
+                            <p class="sub1">Background</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="detail">Details</p>
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </li>
+                            </ul>
+                            <div class="box">
+                                <p>
+                                    <b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                    <b>Lorem ipsum dolor</b> sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+
+                            <h2>Hyderabad team grows miniature eyes using stem cells</h2>
+
+                            <p class="sub1">Why in news?</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p class="detail">Why Important?</p>
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </li>
+                            </ul>
+                            <div class="box">
+                                <p>
+                                    <b>Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                                <p>
+                                    <b>Lorem ipsum dolor</b> sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div><!--ed_postBox-->
+                        <div class="nextPrev">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="backTo">
+                                        <a href="#">
+                                            Back to (8. Culture - <br />Current Affairs...) <img class="imgIcon2" src="img/innerpage/fileIcon2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="nextTo">
+                                        <a href="#">
+                                            <img class="imgIcon" src="img/innerpage/menuIcon2.png" alt=""> Next to (8. Culture -<br /> Current Affairs...)
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!--row-->
+                        </div><!--nextPrev-->
+                        <div class="ViewRankBox">
+                            <ul>
+                                <li><span><i class="fa fa-eye" aria-hidden="true"></i> Views: 166</span></li>
+                                <li><span><i class="fa fa-star-o" aria-hidden="true"></i> Rank: 4 (120)</span></li>
+                            </ul>
+                        </div><!--ViewRankBox-->
+
+
+                        <h4>Description of Course</h4>
+                        <p>
+                            The online course for preparation of Paper 1 of UPSC provides all the important notes from variety of
+                            topics including Geography, History, Economics and others. It also provides Current Affaris, NCERT
+                            Textbooks, videos and MCQs to practice your skills and help you prepare better for...  <a href="" class="ViewMore"> View more</a>
+                        </p>
+                        <div class="lineBox2"></div><!--lineBox-->
+                        <h4>Shared by</h4>
+                        <div class="rankHolder">
+                            <span class="iconBox padding10"><img src="img/innerpage/rankIcon.jpg" alt=""></span>
+                        </div>
+                        <div class="rankHolder">
+                            <span class="rankText">UPSC Rank Holders</span>
+                            <span class="rankmidText">Teacher</span>
+                        </div>
+                        <div class="rankHolder"><a href="#" class="followBtnn">Following</a></div>
+
+                        <div class="lineBox2"></div><!--lineBox-->
+
+                        <h4>QUESTIONs & ANSWERS</h4>
+                        <a href="#" class="linkText">Ask a question or post a request</a>
+                        <div class="lineBox2"></div><!--lineBox-->
+                    </div><!--ed_mid_box-->
+                </div><!--col-sm-7 col-md-7-->
+                <div class="col-sm-3 col-md-3">
+                    <div class="ed_rgt_box">
+
+                        <div class="people_box">
+                            <h3>SImilar content</h3>
+                            <div class="lineBox" style="margin-top: 0px;"></div><!--lineBox-->
+                            <div class="people_boxIn">
+
+                                <p>
+                                    Science and Technology- Current
+                                    Affair May 2016, UPSC/IAS Exam
+                                </p>
+                                <ul class="viewRank2">
+                                    <li><span><i class="fa fa-eye" aria-hidden="true"></i> 145</span></li>
+                                    <li><span><i class="fa fa-star-o" aria-hidden="true"></i> 4</span></li>
+                                </ul>
+
+                            </div><!--row people_boxIn-->
+                            <div class="lineBox"></div><!--lineBox-->
+                            <div class="people_boxIn">
+
+                                <p>
+                                    Science and Technology- Current
+                                    Affair May 2016, UPSC/IAS Exam
+                                </p>
+                                <ul class="viewRank2">
+                                    <li><span><i class="fa fa-eye" aria-hidden="true"></i> 119</span></li>
+                                    <li><span><i class="fa fa-star-o" aria-hidden="true"></i> 3.5</span></li>
+                                </ul>
+
+                            </div><!--row people_boxIn-->
+                            <div class="lineBox"></div><!--lineBox-->
+                            <div class="people_boxIn">
+
+                                <p>
+                                    Science and Technology- Current
+                                    Affair May 2016, UPSC/IAS Exam
+                                </p>
+                                <ul class="viewRank2">
+                                    <li><span><i class="fa fa-eye" aria-hidden="true"></i> 116</span></li>
+                                    <li><span><i class="fa fa-star-o" aria-hidden="true"></i> 5</span></li>
+                                </ul>
+
+                            </div><!--row people_boxIn-->
+                            <div class="lineBox"></div><!--lineBox-->
+                            <div class="btn_box">
+                                <a href="#" class="show_more">Show more</a>
+                            </div>
+                        </div><!--people_box-->
+                        <ul class="share_box">
+                            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                            <li><span></span></li>
+                            <li>Share with a friend:</li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul><!--share_box-->
+
+                    </div><!--ed_rgt_box-->
+                </div><!--col-sm-3 col-md-3-->
+            </div><!--container-->
+            <div class="ed_footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <ul class="ed_footer_link">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <span class="ed_copyright">&#9400; 2012-15 EduRev</span>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <ul class="ed_social_icon">
+                                <li><a href="#"><img src="img/fb.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/tw.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/pt.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/gp.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/tr.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/bl.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div><!--row-->
+                </div><!--container-->
+            </div><!--ed_footer-->
+        </div><!--ed_container end-->
+    </div><!--ed_main end-->
+    <!--Rating Star-->
+    <div class="edRating">
+        <h4>Please rate the document to help us maintain content quality</h4>
+        <div class="row">
+            <div class="col-xs-2"><img src="img/innerpage/excellent_icn.png" class="img-responsive" /><span>Excellent<br />(5)</span></div>
+            <div class="col-xs-2"><img src="img/innerpage/good__icn.png" class="img-responsive" /><span>Good<br />(4)</span></div>
+            <div class="col-xs-2"><img src="img/innerpage/average_icn.png" class="img-responsive" /><span>Average<br />(3)</span></div>
+            <div class="col-xs-2"><img src="img/innerpage/below_average_icn.png" class="img-responsive" /><span>Below average<br />(2)</span></div>
+            <div class="col-xs-2"><img src="img/innerpage/poor_icn.png" class="img-responsive" /><span>Poor<br />(1)</span></div>
+        </div>
+        <button class="submit">Submit</button>
+    </div>
+    <!--Rating End-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

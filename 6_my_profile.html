@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Edurev</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/innerpage.css" rel="stylesheet">
+    <link href="css/innerpage2.css" rel="stylesheet">
+    <link href="css/innerpage3.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="ed_main">
+        <div class="ed_header">
+            <div class="container">
+                <div class="col-sm-2 col-md-2">
+                    <a class="ed_clickBtn" onclick="openNav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a><!--ed_clickBtn-->
+                    <a href="#"><img src="img/logo.jpg" alt="logo"></a>
+                </div>
+                <div class="col-sm-5 col-md-6">
+                    <div class="courses_dropDown">
+                        <select>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                            <option>Courses</option>
+                        </select>
+                        <span class="courses_img"><img src="img/courses-img.png" alt="" class="img-responsive"></span>
+                        <input type="" name="" placeholder="Search for anything...">
+                        <button class="search_btn"><img src="img/search-icon.png" alt=""></button>
+                    </div><!--courses_dropDown-->
+                </div><!--col-sm-7 col-md-7-->
+                <div class="col-sm-5 col-md-4">
+                    <ul class="ed_top_link">
+                        <li class="mobileDisplay"><a href="#" class="topLinkBorder"><img class="profileIMG" src="img/profile-img.png" alt=""> Arun Jha</a></li>
+                        <li class="mobileDisplay"><a href="index.html" class="topLinkBorder">Home</a></li>
+                        <li><a href="#"><img src="img/upload-img.png" alt=""></a></li>
+                        <li id="noti_Container">
+                            <div id="noti_Counter"></div>
+                            <div id="notifications">
+
+                                <div style="height:auto;">
+
+                                    <div class="notificationBody row">
+                                        <div class="col-xs-4">
+                                            <div class="notificationLeftH">You and Following</div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="mainBorder row">
+                                                <div class="col-xs-6">
+                                                    <div class="notificationCentH"><span>&#xB7;</span> Follow Request</div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="notificationRightH">Mark all as read</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Kunaal Satija</strong> started following you.<br /><small>Now</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon2.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Variya Harsh</strong> & <strong>Arpit Agrawal</strong> rated this video SQL for Beginners.<br /><small>5 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon3.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p><strong>Shobhit Jain</strong> rated this document <strong>DU B.COM Marketing Managment 480 Sem6, 2015 PAPER</strong><br /><small>15 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="notificationItems">
+                                        <div class="col-xs-2">
+                                            <div class="notificationIcon"><img src="img/nIcon4.png" alt="" /></div>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="notificationContent">
+                                                <p>Welcome to <strong>EduRev</strong>, we will try our best to simplify and revolutionize education for you. Click on this notification to leave a feedback anytime. <strong>Happy e-studying.</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="seeAll"><a href="#">See All</a></div>
+                            </div>
+                            <a href="#"><img src="img/notification-img.png" alt="" id="noti_Button"></a>
+
+                        </li>
+                        <li class="mobileDisplay"><a href="#" style="padding-right: 0px;"><img src="img/setting-img.png" alt=""></a></li>
+                    </ul>
+                </div><!--col-sm-3 col-md-3-->
+            </div><!--container-->
+
+        </div><!--ed_header end-->
+        <div class="ed_container">
+            <div class="ed_innerBox profile_box">
+                <div class="container">
+                    <div class="col-xs-6 col-sm-3 col-md-2">
+                        <div class="profile_img_box">
+                            <img src="img/innerpage/profile-img.png" alt="" class="img-responsive">
+                        </div>
+                    </div><!--col-sm-2 col-md-2-->
+                    <div class="col-sm-3 col-md-5">
+                        <div class="contantBox">
+                            <h2>Uttam Paswan</h2>
+                            <span class="font12">from Delhi</span>
+                            <span class="font14"><strong>Product Designer</strong> <br /> Institute: <strong>MAAC</strong></span>
+
+                        </div><!--contantBox-->
+                    </div><!--col-sm-7 col-md-7-->
+                    <div class="col-sm-6 col-md-5 ">
+                        <div class="editBtnBox">
+                            <a href="#" class="enrolledBtn editbtn">
+                                Edit Profile
+                            </a>
+                        </div>
+                        <ul class="followList">
+                            <li> Level <span>2</span></li>
+                            <li> Follower <span>20</span></li>
+                            <li> Following <span>10</span></li>
+
+                        </ul>
+
+                    </div><!--col-sm-4 col-md-4-->
+                </div><!--container-->
+            </div><!--profile_box-->
+            <div class="ed_tab_block">
+                <div class="container">
+                    <div class="col-sm-2 col-md-2">
+                        <h4>Profile options:</h4>
+                    </div>
+                    <div class="col-sm-7 col-md-7">
+
+                        <ul class="tabs hrTabs">
+                            <li class="tab-link current" data-tab="tab-1">
+                                <a href="#">
+                                    Analysis
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-2">
+                                <a href="#">
+                                    Tests (100+)
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-3">
+                                <a href="#">
+                                    Timeline
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-4">
+                                <a href="#">
+                                    About
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-5">
+                                <a href="#">
+                                    Content
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-6">
+                                <a href="#">
+                                    Courses
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li class="tab-link" data-tab="tab-7">
+                                <a href="#">
+                                    Tests
+                                    <span></span>
+                                </a>
+                            </li>
+                        </ul><!--tabs-->
+                    </div>
+                    <div class="col-sm-3 col-md-3"></div>
+                </div><!--container-->
+            </div><!--ed_tab_block-->
+            <div class="container">
+                <div class="col-sm-12 col-md-12">
+                    <div id="tab-1" class="tab-content current">
+                        1
+                    </div><!--tab-1-->
+                    <div id="tab-2" class="tab-content">
+                        2
+                    </div><!--tab-2-->
+
+                    <div id="tab-3" class="tab-content">
+                        3
+                    </div><!--tab-3-->
+                    <div id="tab-4" class="tab-content">
+                        4
+                    </div> <!--tab-4-->
+                    <div id="tab-5" class="tab-content">
+                        5
+                    </div> <!--tab-5-->
+                    <div id="tab-6" class="tab-content">
+                        6
+                    </div> <!--tab-6-->
+                    <div id="tab-7" class="tab-content">
+                        7
+                    </div> <!--tab-7-->
+                </div>
+            </div><!--container-->
+            <div class="ed_footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <ul class="ed_footer_link">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <span class="ed_copyright">&#9400; 2012-15 EduRev</span>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <ul class="ed_social_icon">
+                                <li><a href="#"><img src="img/fb.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/tw.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/pt.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/gp.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/tr.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/bl.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div><!--row-->
+                </div><!--container-->
+            </div><!--ed_footer-->
+        </div><!--ed_container end-->
+    </div><!--ed_main end-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
